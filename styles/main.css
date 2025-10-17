@@ -203,7 +203,13 @@ p.lead{margin:0 0 14px;color:#6b7b6b}
       .carousel-btn.left{left:6px}
       .carousel-btn.right{right:6px}
       #contact .contactmobile{grid-template-columns: 1fr;gap: 30px;}
-    } 
+    }
+    
+    @media (min-width: 700px) and (max-width: 977px) {
+      .hero-right {
+        height: 70%;
+}
+    }
 
     /* New Carousel */
     #events .new-carousel {
