@@ -211,6 +211,13 @@ p.lead{margin:0 0 14px;color:#6b7b6b}
 }
     }
 
+    @media (max-width: 600px) {
+      .hero {
+        padding: 1.3rem;
+        gap: 10px;
+      }
+    }
+
     /* New Carousel */
     #events .new-carousel {
       width: 100%;
