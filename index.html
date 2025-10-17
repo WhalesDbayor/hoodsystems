@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hood Systems — Agribusiness Hub Limited</title>
+  <meta name="description" content="Hood Systems — Planting Smiles, Growing Happiness. Banana, Poultry, Catfish, BSF. Export-ready, sustainable agribusiness."/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/playvideo.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script> -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><img src="assets/hoodsystemlogo.png" alt="hoodsystemlogo"></div>
+        <div>
+          <div style="font-weight:700;color:#0b3f2a">Hood Systems</div>
+          <small style="color:var(--muted)">Planting Smiles, Growing Happiness</small>
+        </div>
+      </div>
+
+      <!-- hamburger button (hidden on desktop) -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <!-- desktop nav (visible on wide screens) -->
+      <nav class="top-nav" aria-label="top links">
+        <ul class="nav-list">
+          <li><a href="#ventures">Ventures</a></li>
+          <li><a href="#events">Activities</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#investors">Investors</a></li>
+          <li><button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button></li>
+        </ul>
+      </nav>
+
+      <!-- mobile nav (hidden on desktop, toggled on mobile) -->
+      <nav id="mobileNav" class="mobile-nav" aria-label="mobile top links" hidden>
+        <ul class="mobile-list">
+          <li><a href="#ventures">Ventures</a></li>
+          <li><a href="#events">Activities</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#investors">Investors</a></li>
+          <li><button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="">
+    <!-- HERO -->
+    <section class="hero" style="background: url('assets/agricbg.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
+      <div class="hero-card reveal" id="intro">
+        <span class="kicker">Agri • Export • Training</span>
+        <h2>Hood Systems Agribusiness Hub Limited</h2>
+        <p class="lead">We grow sustainable, export-ready African food products — bananas, poultry, catfish and BSF feed solutions. Join our mission to build food security and livelihoods.</p>
+
+        <div class="hero-actions">
+          <button class="btn" onclick="document.getElementById('ventures').scrollIntoView({behavior:'smooth'})">Explore Ventures</button>
+          <button class="btn" style="background:transparent;border:1px solid var(--primary);color:var(--primary)" onclick="document.getElementById('investors').scrollIntoView({behavior:'smooth'})">Investor Opportunities</button>
+        </div>
+
+        <div class="hero-stats" aria-hidden="true" style="margin-top:14px">
+          <div class="stat"><div class="n" data-target="120">0</div><div style="font-size:.88rem;color:var(--muted)">Hectares</div></div>
+          <div class="stat"><div class="n" data-target="350">0</div><div style="font-size:.88rem;color:var(--muted)">Tons / year</div></div>
+          <div class="stat"><div class="n" data-target="420">0</div><div style="font-size:.88rem;color:var(--muted)">Beneficiaries</div></div>
+        </div>
+      </div>
+
+      <!-- <aside class="hero-image reveal" role="img" aria-label="Hero image">
+        <img src="MrMoshood.jpg" alt="" loading="lazy">
+        <img src="IMG-20251003-WA0030.jpg" alt="" loading="lazy" style="float: right;">
+        <div class="placeholder">
+          Hero image placeholder — replace with farm photo
+        </div>
+      </aside> -->
+      <aside class="hero-right reveal" aria-hidden="false">
+        <!-- hero image: replace data-src with your image. subtle parallax on scroll -->
+        <img class="hero-media" src="assets/MrMoshood.jpg" alt="Banana plantation" loading="lazy">
+        <!-- <ul id="slider">
+          <li class="slide"><img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg" width="600px" height="400px"></li>
+          <li class="slide"><img src="https://wallpaperaccess.com/full/1154341.jpg" width="600px" height="400px"></li>
+          <li class="slide"><img src="https://wallpapercave.com/wp/wp2634222.jpg" width="600px" height="400px"></li>
+          <li class="slide"><img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" width="600px" height="400px"></li>
+          <li class="slide"><img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" width="600px" height="400px"></li>
+        </ul> -->
+        <div class="hero-overlay" role="note">
+          <div class="overlay-title">Banana Village Project</div>
+          <div class="overlay-sub">Investment, training & export readiness</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- VENTURES -->
+    <section id="ventures" class="reveal container">
+      <div>
+        <div class="section-head">
+          <h3 style="margin:0;color:#0b3f2a">Our Ventures</h3>
+          <small class="muted">Sustainable farming &#183; Processing &#183; Export</small>
+        </div>
+        <div class="grid ventures reveal" style="margin-top:12px">
+          <article class="card">
+            <div class="icon"><img src="assets/Banana Plantain Icon.png" alt="" srcset=""></div>
+            <h4>Banana & Plantain</h4>
+            <p>Export-focused plantations, cold-chain ready packaging and community farmer training.</p>
+            <button class="btn" onclick="openModal('Banana & Plantain Farming',`<p>Large-scale plantation farming focusing on export-grade bananas & plantains. We use sustainable soil management and post-harvest cold chain processes to ensure quality for international markets.</p>
+               <ul><li>Processing & Packaging</li><li>Export compliance</li><li>Farmer training programs</li></ul>`)">Learn more</button>
+          </article>
+  
+          <article class="card">
+            <div class="icon"><img src="assets/Poultry Icon.png" alt=""></div>
+            <h4>Poultry</h4>
+            <p>Integrated modern poultry rearing with BSF-supplemented feed and hygienic processing lines.</p>
+            <button class="btn" onclick="openModal('Poultry Production',`<p>Commercial poultry rearing integrated with BSF-based feed to reduce cost and improve nutrition. Small-batch processing for local markets and scalable production for supply chains.</p>`)">Learn more</button>
+          </article>
+  
+          <article class="card">
+            <div class="icon"><img src="assets/Aquaculture Icon.png" alt="" srcset=""></div>
+            <h4>Aquaculture</h4>
+            <p>Aquaculture using efficient water recirculation, hatchery services and market ready processing.</p>
+            <button class="btn" onclick="openModal('Aquaculture',`<p>Recirculating aquaculture systems, hatchery support, and quality-assured feed. We supply fresh and processed catfish to local & export markets.</p>`)">Learn more</button>
+          </article>
+  
+          <article class="card">
+            <div class="icon"><img src="assets/BSF Icon.png" alt=""></div>
+            <h4>BSF — Black Soldier Fly</h4>
+            <p>Turning organic waste into protein-rich feed for sustainable livestock & fish nutrition.</p>
+            <button class="btn" onclick="openModal('BSF Production',`<p>We convert organic waste into protein-rich larvae to produce sustainable animal feed for poultry and fish — a circular economy solution.</p>`)">Learn more</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities Carousel -->
+    <!-- <section id="events" class="reveal container" style="margin-top:34px">
+      <div class="section-head">
+        <h3 style="margin:0;color:#0b3f2a">Past Activities & Events</h3>
+        <small class="muted">Trainings • Expos • Community Outreach</small>
+      </div>
+
+      <div class="carousel-wrap" style="margin-top:14px">
+        <button class="carousel-btn left" aria-label="Scroll left" id="cLeft">&#8249;</button>
+        <div class="carousel" id="carousel" tabindex="0" aria-roledescription="carousel">
+          <figure class="slide">
+            <img src="IMG-20251003-WA0036.jpg" alt="Youth training photo placeholder" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:8px" class="lazy">
+            <figcaption><strong>Youth Agritech Training 2024</strong><div class="muted">Hands-on hydroponics session</div></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="IMG-20251003-WA0035.jpg" alt="Harvest expo photo placeholder" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:8px" class="lazy">
+            <figcaption><strong>Harvest Expo 2023</strong><div class="muted">Showcasing export samples</div></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="IMG-20251003-WA0032.jpg" alt="Community outreach" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:8px" class="lazy">
+            <figcaption><strong>Community Outreach</strong><div class="muted">Farm visits and training</div></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="IMG-20251003-WA0031.jpg" alt="Export readiness workshop" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:8px" class="lazy">
+            <figcaption><strong>Export Readiness Workshop</strong><div class="muted">Compliance & packaging</div></figcaption>
+          </figure>
+        </div>
+        <button class="carousel-btn right" aria-label="Scroll right" id="cRight">&#8250;</button>
+      </div>
+    </section> -->
+
+    <!-- New Carousel -->
+    <section id="events" class="container reveal">
+      <div class="section-head">
+        <h3 style="margin:0;color:#0b3f2a">Past Activities & Events</h3>
+        <small class="muted">Trainings &#183; Expos &#183; Community Outreach</small>
+      </div>
+      <section class="new-carousel container reveal" style="margin-top:34px">
+  
+        <div class="new-card">
+          <!-- <figure class="slide">    
+          </figure> -->
+          <img src="assets/IMG-20251003-WA0036.jpg" alt="Youth training photo placeholder" class="lazy">
+          <caption><strong>Youth Agritech Training 2024</strong><div class="muted">Hands-on hydroponics session</div></caption>
+        </div>
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0035.jpg" alt="Harvest expo photo placeholder" class="lazy">
+          <caption><strong>Harvest Expo 2023</strong><div class="muted">Showcasing export samples</div></caption>
+        </div>
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0032.jpg" alt="Community outreach" class="lazy">
+          <caption><strong>Community Outreach</strong><div class="muted">Farm visits and training</div></caption>
+        </div>
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0031.jpg" alt="Export readiness workshop" class="lazy">
+          <caption><strong>Export Readiness Workshop</strong><div class="muted">Compliance & packaging</div></caption>
+        </div>
+        <!-- NEW CARD: thumbnail with centered play icon -->
+        <div class="new-card">
+          <div class="video-thumb" role="button" tabindex="0" aria-label="Play video: Harvest Expo 2023"
+              data-video-src="assets/slidevideo1.mp4" data-poster="assets/slidevideo1.png">
+            <img src="assets/slidevideo1.PNG" alt="Harvest expo thumbnail" class="thumb" />
+            <!-- SVG play icon -->
+            <span class="play-btn" aria-hidden="true">
+              <svg viewBox="0 0 100 100" width="64" height="64" aria-hidden="true">
+                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.45)"/>
+                <polygon points="40,30 40,70 72,50" fill="#fff"/>
+              </svg>
+            </span>
+            <caption>
+              <strong>Harvest Expo 2023</strong>
+              <div class="muted">Showcasing export samples</div>
+            </caption>
+          </div>
+        </div>
+
+        <!-- Modal (kept outside card) -->
+        <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-label="Video player">
+          <div class="video-modal-backdrop" data-close></div>
+          <div class="video-modal-panel" role="document">
+            <button class="modal-close" aria-label="Close video" title="Close (Esc)">&times;</button>
+            <video id="modalVideo" controls playsinline webkit-playsinline preload="metadata">
+              <!-- src will be set dynamically -->
+              Your browser does not support the video element.
+            </video>
+          </div>
+        </div>
+
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0029.jpg" alt="Community outreach" class="lazy">
+          <caption><strong>Community Outreach</strong><div class="muted">Farm visits and training</div></caption>
+        </div>
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0030.jpg" alt="Export readiness workshop" class="lazy">
+          <caption><strong>Export Readiness Workshop</strong><div class="muted">Compliance & packaging</div></caption>
+        </div>
+        <div class="new-card">
+          <img src="assets/IMG-20251003-WA0028.jpg" alt="Export readiness workshop" class="lazy">
+          <caption><strong>Export Readiness Workshop</strong><div class="muted">Compliance & packaging</div></caption>
+        </div>
+
+        <!-- <div class="new-card"><h3>Card 7</h3></div>
+        <div class="new-card"><h3>Card 8</h3></div>
+        <div class="new-card"><h3>Card 9</h3></div>
+        <div class="new-card"><h3>Card 10</h3></div> -->
+      </section>
+    </section>
+
+    <!-- ACTIVITIES / CAROUSEL -->
+    <!-- <section id="activities" class="container reveal" aria-labelledby="activitiesTitle">
+      <div class="section-head">
+        <h2 id="activitiesTitle">Past Activities & Events</h2>
+        <div class="section-sub">Workshops • Training • Community Outreach • Expos</div>
+      </div>
+      <div class="section-head">
+        <h3 style="margin:0;color:#0b3f2a">Past Activities & Events</h3>
+        <small class="muted">Trainings • Expos • Community Outreach</small>
+      </div>
+
+      <div class="carousel-wrap" aria-roledescription="carousel">
+        <button class="carousel-btn left" id="prev" aria-label="Previous activity">‹</button>
+        <div class="carousel" id="activityCarousel" tabindex="0">
+          slides: replace data-src with real images
+          <figure class="slide">
+            <img data-src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Youth training">
+            <figcaption class="meta"><strong>Youth Agritech Training 2024</strong><div class="muted">Hands-on hydroponics</div></figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img data-src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="Harvest expo">
+            <figcaption class="meta"><strong>Harvest Expo 2023</strong><div class="muted">Export showcase</div></figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img data-src="https://images.unsplash.com/photo-1545060894-9f7cb2c6b1c0?q=80&w=1200&auto=format&fit=crop" alt="Community outreach">
+            <figcaption class="meta"><strong>Community Outreach</strong><div class="muted">Farm visits & demos</div></figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img data-src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Export readiness workshop">
+            <figcaption class="meta"><strong>Export Readiness Workshop</strong><div class="muted">Compliance & packaging</div></figcaption>
+          </figure>
+        </div>
+        <button class="carousel-btn right" id="next" aria-label="Next activity">›</button>
+
+        <div class="carousel-indicators" id="indicators" role="tablist" aria-label="Activity indicators"></div>
+      </div>
+    </section> -->
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section container testi" role="region" aria-label="Testimonials">
+      <h3 class="reveal">Testimonials</h3>
+      <!-- <div class="carousel reveal" id="testiList">
+        <div class="testimonial">
+          <strong>Olumide A.</strong>
+          <p>"Great training & practical coaching. My farm production increased."</p>
+        </div>
+        <div class="testimonial">
+          <strong>Chioma I.</strong>
+          <p>"Reliable supply and quality packaging for export."</p>
+        </div>
+      </div> -->
+      <div id="testiList" aria-live="polite" class="grid reveal"></div>
+      <nav id="pager" class="muted small"></nav>
+
+      <div style="margin-top:12px" class="reveal">
+        <!-- <form id="testimonialForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="tname">Your name</label>
+              <input id="tname" name="name" required placeholder="Full name" />
+            </div>
+            <div class="field">
+              <label for="ttext">Testimonial</label>
+              <input id="ttext" name="testimonial" required placeholder="Short comment" />
+            </div>
+          </div>
+          <div style="margin-top:8px">
+            <button type="submit" class="btn primary">Submit Testimonial</button>
+            <small class="muted" style="display:block;margin-top:8px">Submissions are reviewed before appearing publicly.</small>
+          </div>
+        </form> -->
+        <h2>Leave a Testimonial</h2>
+        <form id="testimonialForm" autocomplete="off" novalidate>
+          <input type="text" name="name" placeholder="Your name (optional)" maxlength="100" />
+          <textarea name="testimonial" placeholder="Write your testimonial (at least a few sentences)..." rows="4" maxlength="2000" required></textarea>
+
+          <!-- Honeypot: invisible field to trap bots -->
+          <input type="text" name="website" style="position:absolute; left:-2000px; top:auto; width:1px; height:1px; opacity:0;" tabindex="-1" autocomplete="off" />
+
+          <!-- timestamp for minimum time check -->
+          <input type="hidden" id="formTimestamp" name="ts" />
+
+          <div style="display:flex; gap:8px; align-items:center;">
+            <button id="submitBtn" type="submit">Send</button>
+            <div class="small muted" id="statusMsg"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="reveal container" style="margin-top:34px">
+      <div class="section-head">
+        <h3 style="margin:0;color:#0b3f2a">Meet The Team</h3>
+        <small class="muted">Experienced agribusiness & export professionals</small>
+      </div>
+      <div class="grid team" style="margin-top:12px">
+        <div class="member">
+          <img src="assets/IMG-20251003-WA0035.jpg" alt="Dr Amina Bello photo" class="lazy">
+          <h4>Mr. Moshood Mejigbedu</h4>
+          <div class="muted">CEO & Lead Agronomist</div>
+        </div>
+        <div class="member">
+          <img src="assets/IMG-20251003-WA0032.jpg" alt="John Okoro photo" class="lazy">
+          <h4>John Okoro</h4>
+          <div class="muted">Head of Fishery</div>
+        </div>
+        <!-- <div class="member">
+          <img src="IMG-20251003-WA0035.jpg" alt="Grace Uche photo" class="lazy">
+          <h4>Grace Uche</h4>
+          <div class="muted">Export & Compliance</div>
+        </div> -->
+        <div class="member">
+          <img src="assets/IMG-20251003-WA0036.jpg" alt="Tunde Adesina photo" class="lazy">
+          <h4>Tunde Adesina</h4>
+          <div class="muted">Operations Manager</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTORS -->
+    <section id="investors" class="reveal" style="margin-top:34px;background: url(assets/agricbg.jpg);background-size: cover;background-position: center;background-attachment: fixed;">
+      <div class="section-head">
+        <h3 style="margin:0;color:#0b3f2a">Investor Opportunities</h3>
+        <small class="muted">Scale with us — plantations, greenhouses, processing & export</small>
+      </div>
+      <div style="margin-top:12px;background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow-lg)">
+        <p class="muted">We have structured investment packages with clear ROI models. Request our investor brief and schedule a call.</p>
+        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+          <a class="btn" href="https://drive.google.com/file/d/1mNTfJrWS6hmVhgN1Mc8TJ7t6md-tGw-O/view?usp=sharing">Download Brief</a>
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal container" style="margin-top:34px">
+      <h3 style="color:#0b3f2a">Contact & Visit</h3>
+      <div class="contactmobile">
+        <form id="contactForm" style="background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow-lg)">
+          <div class="row">
+            <input name="name" placeholder="Full name" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <input name="phone" placeholder="Phone" required>
+            <input name="subject" placeholder="Subject">
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="send" style="margin-top:10px;display: flex;justify-content: space-between;flex-wrap: wrap;gap: 8px;">
+            <button class="btn" type="submit">Send message</button>
+            <a class="btn anchor" style="background:transparent;border:1px solid var(--primary);color:var(--primary);" href="https://wa.me/2348060078730?text=Hello">Chat on WhatsApp</a>
+          </div>
+        </form>
+
+        <aside style="background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow-lg)">
+          <strong>Office:</strong>
+          <div class="muted">13 Abiodun Sadiku street, Dopemu, Agege, Lagos State</div>
+          <div style="margin-top:8px"><strong>Site:</strong><div class="muted">Banana Village, Igbogbo village, Oke-Odan, Yewa South LGA, Ogun State</div></div>
+          <div style="margin-top:8px"><strong>Email:</strong> <a href="mailto:hoodsystems123@gmail.com">hoodsystems123@gmail.com</a></div>
+          <div style="margin-top:8px"><strong>Phone:</strong> 08060078730</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top:26px;padding:18px 0;text-align:center">
+    <div class="container">
+      <div style="font-weight:700;color:#0b3f2a">Hood Systems Agribusiness Hub Limited</div>
+      <p class="muted">Follow us: <a href="https://www.instagram.com/mejigbedumos"> First Instagram Account</a> &#183; <a href="https://www.instagram.com/bananavillage2025?igsh=YzljYTk1ODg3Zg=="> Second Instagram Account</a> &#183; <a href="https://www.linkedin.com/in/moshood-mejigbedu-979636137?trk=contact-info"> LinkedIn</a></p>
+      <small class="muted">© <span id="yr"></span> Hood Systems. All rights reserved. Designed by <a href="https://wa.me/2347035002775?text=Hello.%20I%27d%20like%20to%20know%20more%20about%20your%20web%20development%20services." target="_blank"> Wabal Services</a>
+      </small>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(10,20,12,0.45);z-index:80">
+    <div style="background:#fff;border-radius:12px;padding:18px;max-width:720px;width:95%;box-shadow:0 18px 40px rgba(10,40,20,0.3);">
+      <button onclick="closeModal()" style="float:right;border:0;background:var(--muted);font-weight:700">✕</button>
+      <div id="modalInner"></div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+  <script src="header.js"></script>
+  <script src="playvideo.js"></script>
+</body>
+</html>
