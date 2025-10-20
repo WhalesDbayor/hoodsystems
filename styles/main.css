@@ -131,11 +131,11 @@ p.lead{margin:0 0 14px;color:#6b7b6b}
   object-position: center;
 }
 
-    .hero-overlay{
-      position:absolute; left:18px; bottom:18px; background:rgba(255,255,255,0.9); padding:12px 14px; border-radius:10px; box-shadow:var(--shadow-sm);
-    }
-    .overlay-title{font-weight:700; color:var(--primary); font-size:1rem}
-    .overlay-sub{font-size:0.85rem; color:#6b7b6b}
+.hero-overlay{
+  position:absolute; left:18px; bottom:18px; background:rgba(255,255,255,0.9); padding:12px 14px; border-radius:10px; box-shadow:var(--shadow-sm);
+}
+.overlay-title{font-weight:700; color:var(--primary); font-size:1rem}
+.overlay-sub{font-size:0.85rem; color:#6b7b6b}
 
 
     @keyframes glow {
