@@ -94,27 +94,69 @@ document.querySelectorAll('img.lazy[data-src]').forEach(img=>{
 });
 
 // contact form -> mailto fallback
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const fd = new FormData(this); if(!fd.get('name')||!fd.get('email')){ alert('Please fill name and email'); return; }
-  const body = Array.from(fd.entries()).map(([k,v])=>`${k}: ${v}`).join('\n');
-  const mail = `mailto:hoodsystems123@gmail.com?subject=${encodeURIComponent('Website Contact')}&body=${encodeURIComponent(body)}`;
-  window.location.href = mail;
-});
+// 
 
-// TESTIMONIAL form handler
-// document.getElementById('testimonialForm').addEventListener('submit', function(e){
-//   e.preventDefault();
-//   const name = this.name.value.trim() || 'Anonymous';
-//   const text = this.testimonial.value.trim();
-//   if(!text){ alert('Please enter a testimonial'); return; }
-//   Add to carousel locally (pending moderation)
-//   const div = document.createElement('div'); div.className='testimonial';
-//   div.innerHTML = `<strong>${escapeHtml(name)}</strong><p>${escapeHtml(text)}</p><small class="muted">Pending moderation</small>`;
-//   qs('#testiList').appendChild(div);
-//   this.reset();
-//   alert('Thanks — your testimonial has been submitted for review.');
+// document.getElementById('contactForm').addEventListener('submit', function (e) {
+//     e.preventDefault();
+
+//     const fd = new FormData(this);
+
+//     // Get values for validation
+//     const name = fd.get('name');
+//     const email = fd.get('email');
+
+//     if (!name || !email) {
+//         alert('Please fill in both Name and Email.');
+//         return;
+//     }
+
+//     // Construct body
+//     const body = Array.from(fd.entries())
+//         .map(([key, value]) => `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`)
+//         .join('\n');
+
+//     const subject = 'Website Contact';
+//     const mailToLink = `mailto:wabalonline01@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+//     // Try to open email client
+//     try {
+//         window.location.href = mailToLink;
+
+//         // Clear all form fields
+//         this.reset();
+
+//         // Show success message
+//         const messageDiv = document.getElementById('form-message') || createMessageElement();
+//         messageDiv.textContent = '📬 Thank you! Your message has been sent. We’ll get back to you soon.';
+//         messageDiv.style.display = 'block';
+
+//         // Optional: hide message after 5 seconds
+//         setTimeout(() => {
+//             messageDiv.style.display = 'none';
+//         }, 5000);
+
+//     } catch (error) {
+//         // Fallback if mailto fails
+//         alert('Oops! Could not open email client. Please email us directly at wabalonline01@gmail.com');
+//     }
 // });
+
+// Helper: Create message element if not present
+// function createMessageElement() {
+//     const messageDiv = document.createElement('div');
+//     messageDiv.id = 'form-message';
+//     messageDiv.style.padding = '12px';
+//     messageDiv.style.marginTop = '16px';
+//     messageDiv.style.backgroundColor = '#d4edda';
+//     messageDiv.style.color = '#155724';
+//     messageDiv.style.border = '1px solid #c3e6cb';
+//     messageDiv.style.borderRadius = '6px';
+//     messageDiv.style.fontSize = '0.95rem';
+//     messageDiv.style.display = 'none'; // Hidden by default
+//     document.getElementById('contactForm').after(messageDiv);
+//     return messageDiv;
+// }
+
 // === CONFIG ===
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxw1EeWeD-BCHYVhie5f4OegbnUonI0uoC3IRdLn0CMhk21ryYAuVXlOLi-Hwxww5soGg/exec"; // <<--- REPLACE with your deployed Apps Script Web App URL
 const LOCAL_COOLDOWN_MS = 15 * 1000;       // 15s per browser throttle

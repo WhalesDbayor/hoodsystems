@@ -54,7 +54,7 @@ nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;align-items:cent
 nav li{font-weight:600;color:var(--muted)}
 .btn{
   padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700;
-  background:var(--accent); color:white; box-shadow:0 6px 18px rgba(11, 90, 43,0.12);transition: all ease-in-out 0.9s;
+  background:var(--accent); color:white; box-shadow:0 6px 18px rgba(11, 90, 43,0.12);transition: all ease-in-out 0.5s;
 }
 .btn:hover{background: var(--primary);}
 /* Hero - split layout */
@@ -314,7 +314,7 @@ p.lead{margin:0 0 14px;color:#6b7b6b}
     }
     form { display:flex; flex-direction:column; gap:10px; margin-bottom:18px; }
     input[type="text"], textarea { width:100%; padding:10px; border:1px solid #d6d9e6; border-radius:6px; font-size:14px; resize:vertical; }
-    button { padding:10px 14px; border-radius:8px; border:0; background:var(--primary); color:#fff; cursor:pointer; font-weight:600; transition: all 0.9s ease-in-out;}
+    button { padding:10px 14px; border-radius:8px; border:0; background:var(--primary); color:#fff; cursor:pointer; font-weight:600; transition: all 0.5s ease-in-out;}
     button:hover{background: var(--accent);}
     button:disabled { opacity:.6; cursor:default; }
     #testiList { display:grid; gap:12px; margin-top:12px; }
