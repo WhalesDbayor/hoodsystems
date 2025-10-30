@@ -337,8 +337,14 @@ p.lead{margin:0 0 14px;color:#6b7b6b}
     .member{background:var(--card); border-radius:12px;padding:12px;text-align:center; box-shadow:0 8px 22px rgba(11,90,43,0.04)}
     .member img {
       width:100%;
-      border-radius:8px;
-      margin-bottom:8px
+      aspect-ratio: 9 / 16;
+      border-radius: 35px;
+      margin-bottom:8px;
+      transition: all ease-in-out 9s;
+    }
+
+    .member img:hover {
+      border: 1px solid var(--primary);
     }
 
     /* Contact */
